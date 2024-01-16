@@ -22,30 +22,62 @@
                             <div class="col-4">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h5 class="card-title mb-0">Crie sua Conta</h5>
+                                        <h5 class="card-title mb-0">Nome</h5>
                                     </div>
                                     <div class="card-body">
-                                        <input placeholder="Nome" type="text" name="nome" id="nome" required>
-
-                                        <input placeholder="Endereço" type="text" name="endereco" id="endereco" required>
-
-                                        <input placeholder="Email" type="email" name="email" id="email" required>
-
-                                        <input placeholder="Telefone" type="text" name="telefone" id="telefone" required>
-                                        <label for="data">Data do cadastro</label>
-                                        <input type="date" name="data" id="data">
-                                        <input type="submit" value="Confirmar">
+                                        <input placeholder="Digite seu nome" type="text" name="nome" id="nome" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title mb-0">Endereço</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <input placeholder="Digite seu endereço" type="text" name="nome" id="nome" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title mb-0">Email</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <input placeholder="Digite seu Email" type="email" name="email" id="email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title mb-0">Telefone</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <input placeholder="Digite seu Telefone" type="tel" name="endereço" id="endereço" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title mb-0">Data de cadastro</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <input placeholder="Informe a data" type="datetime-local" name="datacadastro" id="datacadastro" required>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+                    <input type="submit" class="btn btn-outline-primary" value="Criar Conta ">
                 </form>
             </main>
 
             <footer class="footer">
-                <?php include 'footer.php' ?>
+                <?php include 'footer.php' 
+                ?>
             </footer>
         </div>
     </div>
