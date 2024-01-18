@@ -73,6 +73,11 @@
                     </div>
                     <input type="submit" class="btn btn-outline-primary" value="Criar Conta ">
                 </form>
+    <style>
+        form{
+            text-align: center;
+        }
+    </style>
             </main>
 
             <footer class="footer">
