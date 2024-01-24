@@ -1,3 +1,4 @@
+
 <nav id="sidebar" class="sidebar js-sidebar">
 	<div class="sidebar-content js-simplebar">
 		<a class="sidebar-brand" href="index.html">
@@ -28,12 +29,12 @@
 			</li>
 
 			<li class="sidebar-item">
-				<a class="sidebar-link" href="pages-sign-up.html">
-					<i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Sign Up</span>
+				<a class="sidebar-link" href="formfornecedor.php">
+				<i class="fa-solid fa-people-group"></i> <span class="align-middle">Fornecedores</span>
 				</a>
 			</li>
 
-			<li class="sidebar-item active">
+			<li class="sidebar-item">
 				<a class="sidebar-link" href="pages-blank.html">
 					<i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
 				</a>

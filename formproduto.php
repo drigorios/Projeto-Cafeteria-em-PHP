@@ -27,9 +27,9 @@
                                 <label for="descricao" class="form-label">Descrição</label>
                                 <textarea class="form-control" id="descricao" rows="1"></textarea>
                             </div>
-                            <div class="mb-3">
-                                <label for="" class="form-label">Categoria de Produto</label>
-                                <select class="form-select form-select-lg" name="categoria" id="categoria">
+                            <div class="mb-3 col-6">
+                                <label for="categoria" class="form-label">Categoria de Produto</label>
+                                <select class="form-select form-select" name="categoria" id="categoria">
                                     <option disabled selected>Selecione uma opção:</option>
                                     <option value="bebidaquente">Bebida quente</option>
                                     <option value="bebidagelada">Bebida gelada</option>
@@ -37,38 +37,51 @@
                                     <option value=sanduicheesalgado">Sanduiche e Salgado</option>
                                 </select>
                             </div>
+                            <div class="mb-3 col-6">
+                                <label for="estoque">Estoque</label>
+                                <input type="number" name="estoque" id="estoque" min="0" max="200" class="form-control">
+                            </div>
                         </div>
 
-    </div>
-    <input type="submit" class="btn btn-outline-primary" value="Salvar pedido">
-    </form>
-    <style>
-        form {
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-        }
+                    </div>
+                    <input type="submit" class="btn btn-outline-primary" value="Salvar pedido">
+                </form>
+                <style>
+                    form {
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                    }
 
-        .form-label {
-            font-weight: 600;
-        }
+                    .form-label {
+                        font-weight: 600;
 
-        h1 {
-            border-bottom: 1px solid black;
-        }
+                    }
 
-        .card-body input {
-            text-align: center;
-            justify-content: center;
-        }
-    </style>
-    </main>
+                    h1 {
+                        border-bottom: 1px solid black;
+                        
+                    }
 
-    <footer class="footer">
-        <?php include 'footer.php'
-        ?>
-    </footer>
-    </div>
+                   .form-control{
+                    border-radius: 200px;
+                   }
+
+                    #categoria {
+                        border-radius: 200px;
+                    }
+
+                    #estoque {
+                        border-radius: 200px;
+                    }
+                </style>
+            </main>
+
+            <footer class="footer">
+                <?php include 'footer.php'
+                ?>
+            </footer>
+        </div>
     </div>
 
     <script src="js/app.js"></script>
