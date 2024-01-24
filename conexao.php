@@ -3,11 +3,11 @@
 <?php 
 
 $server='localhost';
-$usuario='root';
-$senha='';
-$dbname='cafeteria';
+$username='root';
+$password='';
+$database='cafeteria';
 
     // MYSQLI
-$conexao = mysqli_connect($server,$usuario,$senha,$dbname);
+$conexao = mysqli_connect($server,$username,$password,$database);
 
 ?>

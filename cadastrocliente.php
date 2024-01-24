@@ -3,6 +3,8 @@
 
 //CONEXÃO DB
 include 'conexao.php';
+
+
 //end conect
 
 //    VARIÁVEIS
@@ -18,9 +20,37 @@ $complemento = $_POST['complemento'];
 $bairro = $_POST['bairro'];
 $uf = $_POST['uf'];
 $cidade = $_POST['cidade'];
-$imagem = $_FILES['imagem'];
+$arquivo = $_FILES['imagem'];
 //
 
 
+
+if($arquivo !== null) {
+    preg_match("/\.(png|jpg|jpeg){1}$/i", $arquivo["name"],$ext);
+
+    if($ext == true) {
+        $nome_arquivo = md5(uniqid(time())) . "." . $ext[1];
+        $caminho_arquivo = "imagens/".$nome_arquivo;
+        move_uploaded_file($arquivo['tmp_name'],$caminho_arquivo);
+
+        $sql = "INSERT INTO `cliente`(`nome`, `email`, `telefone`, `cpfcnpj`, `cep`, `logradouro`, `numero`, `complemento`, `bairro`, `cidade`, `uf`, `imagem`) VALUES ('$nome','$email','$telefone','$cpfcnpj','$cep','$logradouro','$numero','$complemento','$bairro','$cidade','$uf','$nome_arquivo')";
+
+        $inserir = mysqli_query($conexao,$sql);
+
+    }
+}
+
+
+
+//header('Location: cadastro_cliente.php?msg=1');
+//exit()
+
+
+?>
+
+
+
+
+$sql = "INSERT INTO "
 
 ?>

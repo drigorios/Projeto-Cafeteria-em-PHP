@@ -14,7 +14,7 @@
 			<?php include 'topo.php' ?>
 
 			<main class="content">
-				<form action="" method="post">
+				<form action="cadastrocliente.php" method="post" enctype="multipart/form-data">
 					<div class="container-fluid p-0">
 
 						<h1 class="h3 mb-3">Cadastro do Cliente</h1>
@@ -41,7 +41,7 @@
 							</div>
 							<div class="mb-3 col-4">
 								<label for="cpfcnpj" class="form-label">CPF/CNPJ</label>
-								<input type="text" class="form-control" name="cpf" id="cpfcnpj" maxlength="" placeholder="" />
+								<input type="text" class="form-control" name="cpfcnpj" id="cpfcnpj" maxlength="" placeholder="" />
 							</div>
 							<div class="mb-3 col-4">
 								<label for="cep" class="form-label">CEP</label>
@@ -55,7 +55,8 @@
 									</div>
 									<div class="mb-3 col-3">
 										<label for="numero" class="form-label">N°</label>
-										<input type="text" class="form-control" name="numero" id="numero					</div>
+										<input type="text" class="form-control" name="numero" id="numero" />
+									</div>
 									<div class="mb-3 col-3">
 										<label for="complemento" class="form-label">Complemento</label>
 										<input type="text" class="form-control" name="complemento" id="complemento" />
