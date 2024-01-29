@@ -2,12 +2,16 @@
 
 <?php 
 
-$server='localhost';
+$hostname='localhost';
 $username='root';
 $password='';
 $database='cafeteria';
+$port='3307';
 
     // MYSQLI
-$conexao = mysqli_connect($server,$username,$password,$database);
+$conexao = mysqli_connect($hostname,$username,$password,$database,$port);
+
+
+
 
 ?>

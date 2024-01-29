@@ -25,32 +25,25 @@ $arquivo = $_FILES['imagem'];
 
 
 
-if($arquivo !== null) {
-    preg_match("/\.(png|jpg|jpeg){1}$/i", $arquivo["name"],$ext);
+if (!empty($arquivo)) {
+    preg_match("/\.(png|jpg|jpeg){1}$/i", $arquivo["name"], $ext);
 
-    if($ext == true) {
+    if (!empty($ext)) {
         $nome_arquivo = md5(uniqid(time())) . "." . $ext[1];
-        $caminho_arquivo = "imagens/".$nome_arquivo;
-        move_uploaded_file($arquivo['tmp_name'],$caminho_arquivo);
+        $caminho_arquivo = "imagens/" . $nome_arquivo;
+        move_uploaded_file($arquivo['tmp_name'], $caminho_arquivo);
 
-        $sql = "INSERT INTO `cliente`(`nome`, `email`, `telefone`, `cpfcnpj`, `cep`, `logradouro`, `numero`, `complemento`, `bairro`, `cidade`, `uf`, `imagem`) VALUES ('$nome','$email','$telefone','$cpfcnpj','$cep','$logradouro','$numero','$complemento','$bairro','$cidade','$uf','$nome_arquivo')";
+            $sql = "INSERT INTO clientes (nome, email, telefone, cpfcnpj, cep, logradouro, numero, complemento, bairro, cidade, uf, imagem) VALUES ('$nome','$email','$telefone','$cpfcnpj','$cep','$logradouro','$numero','$complemento','$bairro','$cidade','$uf','$nome_arquivo')";
 
         $inserir = mysqli_query($conexao,$sql);
-
+        
     }
 }
 
 
 
-//header('Location: cadastro_cliente.php?msg=1');
-//exit()
+header('Location: formcliente.php?');
+exit()
 
-
-?>
-
-
-
-
-$sql = "INSERT INTO "
 
 ?>
